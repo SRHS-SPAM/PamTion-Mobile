@@ -5,223 +5,155 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          width: 375,
-          height: 812,
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(color: Color(0xFFFAFAFA)),
-          child: Stack(
-            children: [
-              Positioned(
-                left: 40,
-                top: 152,
-                child: Text(
-                  '환영합니다!',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12,
-                    fontFamily: 'Pretendard',
-                    fontWeight: FontWeight.w500,
-                    height: 0,
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 102,
-                child: Container(
-                  width: 30,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/30x30"),
-                      fit: BoxFit.fill,
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(color: Color(0xFFFAFAFA)),
+              child: Center(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 20,
+                      left: 20,
+                      child: Text(
+                        '환영합니다!',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 186,
-                child: Container(
-                  width: 295,
-                  height: 36,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 295,
-                          height: 36,
-                          decoration: ShapeDecoration(
-                            color: Colors.white,
-                            shape: RoundedRectangleBorder(
-                              side: BorderSide(
-                                  width: 1, color: Color(0xFFE8E8E8)),
-                            ),
+                    Positioned(
+                      top: 60,
+                      left: 20,
+                      child: Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                "https://via.placeholder.com/30x30"),
+                            fit: BoxFit.fill,
                           ),
                         ),
                       ),
-                      Positioned(
-                        left: 85,
-                        top: 9,
-                        child: Container(
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 18,
-                                height: 18,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                        "https://via.placeholder.com/18x18"),
-                                    fit: BoxFit.fill,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 6),
-                              Text(
-                                'Google로 계속하기',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 13,
-                                  fontFamily: 'Pretendard',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 230,
-                child: Container(
-                  width: 295,
-                  height: 36,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
+                    ),
+                    Positioned(
+                      top: 120,
+                      left: 20,
+                      child: Container(
                         width: 295,
                         height: 36,
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(5),
+                          border: Border.all(color: Color(0xFFE8E8E8)),
+                        ),
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              width: 295,
-                              height: 36,
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                      width: 1, color: Color(0xFFE8E8E8)),
+                              width: 18,
+                              height: 18,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://via.placeholder.com/18x18"),
+                                  fit: BoxFit.fill,
                                 ),
                               ),
                             ),
-                            Container(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 20,
-                                    height: 20,
-                                    clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(),
-                                    child: Stack(children: []),
-                                  ),
-                                  const SizedBox(width: 5),
-                                  Text(
-                                    'Github로 계속하기',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontFamily: 'Pretendard',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ],
+                            SizedBox(width: 10),
+                            Text(
+                              'Google로 계속하기',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 13,
                               ),
                             ),
                           ],
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 299,
-                child: Container(
-                  width: 295,
-                  decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                        width: 1,
-                        strokeAlign: BorderSide.strokeAlignCenter,
+                    ),
+                    Positioned(
+                      top: 180,
+                      left: 20,
+                      child: Container(
+                        width: 295,
+                        height: 36,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(5),
+                          border: Border.all(color: Color(0xFFE8E8E8)),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            SizedBox(width: 5),
+                            Image(image: Image.asset(name)),
+                            SizedBox(width: 10),
+                            Text(
+                              'Github로 계속하기',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 13,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 240,
+                      left: 20,
+                      child: Container(
+                        width: 295,
+                        height: 1,
                         color: Color(0xFFD2D2D2),
                       ),
                     ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 343,
-                child: SizedBox(
-                  width: 257,
-                  child: Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
-                    style: TextStyle(
-                      color: Color(0xFFAAAAAA),
-                      fontSize: 8,
-                      fontFamily: 'Pretendard',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
+                    Positioned(
+                      top: 250,
+                      left: 20,
+                      child: Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                        style: TextStyle(
+                          color: Color(0xFFAAAAAA),
+                          fontSize: 10,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 386,
-                child: SizedBox(
-                  width: 257,
-                  child: Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut',
-                    style: TextStyle(
-                      color: Color(0xFFAAAAAA),
-                      fontSize: 8,
-                      fontFamily: 'Pretendard',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
+                    Positioned(
+                      child: SizedBox(
+                        width: 257,
+                        child: Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut',
+                          style: TextStyle(
+                            color: Color(0xFFAAAAAA),
+                            fontSize: 8,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ),
-            ],
-          ),
-        )
-      ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }

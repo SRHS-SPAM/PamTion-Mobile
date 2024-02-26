@@ -58,6 +58,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - asset/img/
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -86,5 +89,15 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+
+  fonts:
+    - family: nanumsquare
+      fonts:
+        - asset: asset/font/NanumSquareNeoOTF-Bd.otf
+        - asset: asset/font/NanumSquareNeoOTF-Eb.otf
+        - asset: asset/font/NanumSquareNeoOTF-Hv.otf
+        - asset: asset/font/NanumSquareNeoOTF-Lt.otf
+        - asset: asset/font/NanumSquareNeoOTF-Rg.otf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

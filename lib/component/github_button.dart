@@ -18,11 +18,7 @@ class _GithubButtonState extends State<GithubButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) => GithubLogin(),
-          ),
-        );
+        GithubLogin();
       },
       child: Container(
         width: MediaQuery

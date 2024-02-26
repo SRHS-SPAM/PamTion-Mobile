@@ -1,14 +1,14 @@
-import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class GithubLogin extends StatelessWidget {
-  const GithubLogin({super.key});
+Future<UserCredential?> GithubLogin() async {
+  // Create a new provider
+  GithubAuthProvider githubProvider = GithubAuthProvider();
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('GithubLogin'),
-      ),
-    );
-  }
+  return await FirebaseAuth.instance
+      .signInWithProvider(githubProvider)
+      .then((value) {
+    print(value.user?.uid);
+  }).onError((error, stackTrace) {
+    print('error${error}');
+  });
 }

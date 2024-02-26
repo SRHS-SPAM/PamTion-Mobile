@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pamtion_mobile/component/github_button.dart';
+import 'package:pamtion_mobile/component/google_button.dart';
 import 'package:pamtion_mobile/const/color.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -46,80 +48,11 @@ class LoginScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width - 80,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(color: Colors.black),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 40,
-                                ),
-                                Image.asset('asset/img/google.png'),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 20),
-                                  child: Text(
-                                    'Google로 계속하기',
-                                    style: TextStyle(
-                                      fontFamily: 'nanumsqare',
-                                      fontSize: 20,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
+                      GoogleButton(),
                       SizedBox(
                         height: 20.0,
                       ),
-                      Container(
-                        width: MediaQuery.of(context).size.width - 80,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(color: Colors.black),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 40,
-                                ),
-                                SizedBox(
-                                  width: 18,
-                                  height: 18,
-                                  child:
-                                      Image.asset('asset/img/githublogo.png'),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 20),
-                                  child: Text(
-                                    'Github로 계속하기',
-                                    style: TextStyle(
-                                      fontFamily: 'nanumsqare',
-                                      fontSize: 20,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
+                      GithubButton(),
                     ],
                   ),
                   SizedBox(
@@ -129,7 +62,9 @@ class LoginScreen extends StatelessWidget {
                     color: Colors.grey,
                     height: 20,
                   ),
-                  SizedBox(height: 40,),
+                  SizedBox(
+                    height: 40,
+                  ),
                   Column(
                     children: [
                       Text(

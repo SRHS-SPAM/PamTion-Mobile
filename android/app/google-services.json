@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "803759046672",
+    "project_id": "pamtion-f8f4c",
+    "storage_bucket": "pamtion-f8f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803759046672:android:c99ab897ef1c3678090a95",
+        "android_client_info": {
+          "package_name": "com.example.pamtion_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803759046672-hvqs5he8csj4nkuorvjvao5bbqsnbkm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9PWVfz7D3gQVyJ8keR5nRQDr0zkgi0Og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803759046672-hvqs5he8csj4nkuorvjvao5bbqsnbkm3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "803759046672-g5g3ia15uo5urqa444s13npqv5d0e35t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pamtion_Mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

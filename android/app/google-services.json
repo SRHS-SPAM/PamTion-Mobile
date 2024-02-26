@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "803759046672-u6tutolb6fc2kr2nsac76r3i65112dpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pamtion_mobile",
+            "certificate_hash": "0f78a50f421031e91603f5dd7dfb56c6c33ec9e2"
+          }
+        },
+        {
           "client_id": "803759046672-hvqs5he8csj4nkuorvjvao5bbqsnbkm3.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -34,7 +42,7 @@
               "client_id": "803759046672-g5g3ia15uo5urqa444s13npqv5d0e35t.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.pamtion_Mobile"
+                "bundle_id": "com.example.pamtionMobile"
               }
             }
           ]

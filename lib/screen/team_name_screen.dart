@@ -22,6 +22,7 @@ class TeamNameScreen extends StatelessWidget {
                 children: [
                   SizedBox(
                     height: 102,
+
                   ),
                   Container(
                     width: 40,

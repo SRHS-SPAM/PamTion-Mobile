@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:pamtion_mobile/component/github_button.dart';
 import 'package:pamtion_mobile/component/google_button.dart';
 import 'package:pamtion_mobile/const/color.dart';
+import 'package:pamtion_mobile/screen/code_screen.dart';
+import 'package:pamtion_mobile/screen/team_name_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -10,7 +12,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: PRIMARY_COLOR,
+      backgroundColor: PRIMARY_COLOR,
       body: SafeArea(
         child: Column(
           children: [
@@ -53,6 +55,15 @@ class LoginScreen extends StatelessWidget {
                         height: 20.0,
                       ),
                       GithubButton(),
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => CodeScreen(),
+                              ),
+                            );
+                          },
+                          child: Text('testButton'))
                     ],
                   ),
                   SizedBox(

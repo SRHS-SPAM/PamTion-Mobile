@@ -1,10 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pamtion_mobile/screen/github_login.dart';
-import 'package:pamtion_mobile/screen/google_login.dart';
+import 'package:pamtion_mobile/component/check_github.dart';
 
 class GithubButton extends StatefulWidget {
-
   const GithubButton({
     super.key,
   });
@@ -18,13 +15,12 @@ class _GithubButtonState extends State<GithubButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GithubLogin();
+        checkGithub(
+          context,
+        );
       },
       child: Container(
-        width: MediaQuery
-            .of(context)
-            .size
-            .width - 80,
+        width: MediaQuery.of(context).size.width - 80,
         height: 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),

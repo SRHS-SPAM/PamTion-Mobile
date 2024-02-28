@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pamtion_mobile/screen/team_name_screen.dart';
 
@@ -10,6 +9,7 @@ class CodeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: PRIMARY_COLOR,
       body: SafeArea(
         child: Column(

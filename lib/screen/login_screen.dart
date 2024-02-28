@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pamtion_mobile/component/github_button.dart';
 import 'package:pamtion_mobile/component/google_button.dart';
 import 'package:pamtion_mobile/const/color.dart';
 import 'package:pamtion_mobile/screen/code_screen.dart';
+import 'package:pamtion_mobile/screen/project_screen.dart';
 import 'package:pamtion_mobile/screen/team_name_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -82,7 +83,9 @@ class LoginScreen extends StatelessWidget {
                         'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
                         style: TextStyle(
                           color: Color(0xFFAAAAAA),
-                          fontSize: 10,
+                          fontSize: 8,
+                          fontFamily: 'Pretendard',
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                       Text(
@@ -92,7 +95,6 @@ class LoginScreen extends StatelessWidget {
                           fontSize: 8,
                           fontFamily: 'Pretendard',
                           fontWeight: FontWeight.w400,
-                          height: 0,
                         ),
                       ),
                     ],
@@ -106,3 +108,4 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+

@@ -1,11 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../screen/google_login.dart';
-
+import 'package:pamtion_mobile/component/check_google.dart';
 
 class GoogleButton extends StatefulWidget {
-
   const GoogleButton({
     super.key,
   });
@@ -19,13 +15,12 @@ class _GoogleButtonState extends State<GoogleButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoogleLogin();
+        checkGoogle(
+          context,
+        );
       },
       child: Container(
-        width: MediaQuery
-            .of(context)
-            .size
-            .width - 80,
+        width: MediaQuery.of(context).size.width - 80,
         height: 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
